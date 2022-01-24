@@ -15,6 +15,12 @@ and change doctrine settings)
 
 Step3: run <code>vendor/bin/doctrine orm:schema-tool:create</code> to create the logs schema
 
+In case the project root folder is not the default (story) 2 files will need to be changed in order for routing to work
+1. /public/index.php line 129 (last line)
+2. /public/.htaccess line (8) (RewriteBase)
+
+This was tested only on apache.
+
 ##Participants
 At start all story participants are initialized with random values. In my example we have the following parties.
 1. Hero
